@@ -13,3 +13,5 @@
 
 # .pem files
 *.pem
+
+webapp-private-key.txt
