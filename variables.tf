@@ -50,13 +50,11 @@ variable "api_key" {
 variable "tfe_organization" {
   type        = string
   description = "(Required) Terraform Cloud organization name."
-  default     = "deep-dive-rj"
 }
 
 variable "tfe_workspace_name" {
   type        = string
   description = "(Required) Terraform Cloud workspace name."
-  default     = "web-app-dev"
 
 }
 
