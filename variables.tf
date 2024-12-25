@@ -58,4 +58,7 @@ variable "tfe_workspace_name" {
 
 }
 
-
+variable "playbook_repository" {
+  type        = string
+  description = "(Required) URI of playbook repository"
+}
