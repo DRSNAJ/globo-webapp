@@ -32,9 +32,9 @@ variable "instance_type" {
   default     = "t3.micro"
 }
 
-variable "api_key" {
+variable "api_key_secret_id" {
   type        = string
-  description = "(Required) API key for web app to talk to SaaS platform."
+  description = "(Required) Secret ID for the API key for web app to talk to SaaS platform."
 }
 
 # variable "public_subnets" {
@@ -61,4 +61,10 @@ variable "tfe_workspace_name" {
 variable "playbook_repository" {
   type        = string
   description = "(Required) URI of playbook repository"
+}
+
+variable "ec2_role_name" {
+  type        = string
+  description = "(Required) Name of the IAM role to attach to the EC2 instances."
+
 }
